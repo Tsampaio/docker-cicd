@@ -11,6 +11,13 @@ app.get('/', (req, res) => {
   `);
 });
 
+app.get('/about', (req, res) => {
+  res.send(`
+    <h1>This is the ABOUT PAGE from Docker</h1>
+    <h2>DIGITAL OCEAN</h2>
+  `);
+});
+
 app.get('/error', (req, res) => {
   process.exit(1);
 });
